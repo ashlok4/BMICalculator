@@ -23,7 +23,7 @@ Ensure you have Node.js and npm (or yarn) installed on your system. You can down
 Use Git to clone this repository locally:
 
 ```bash
-git clone [[https://github.com/ashlok4/BMICalculator.git](https://github.com/ashlok4/BMICalculator.git)](https://github.com/ashlok4/BMICalculator.git)
+git clone https://github.com/ashlok4/BMICalculator.git
 ```
 
 
