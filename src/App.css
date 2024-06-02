@@ -1,0 +1,75 @@
+/* App.css */
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 400px;
+    font-family: serif;. /* Use a serif font fodwkcdwkocr a formal look */
+    color: #333; /* Set text color to dark gray */
+  }
+  
+  input[type="range"] {
+    width: 100%;
+    margin-bottom: 10px;
+    -webkit-appearance: none; /* Remove default slider styles */
+    appearance: none; /* Remove default slider styles */
+    height: 10px; /* Set slider height */
+    background: linear-gradient(to right, #ddd 25%, #ccc 50%, #ddd 75%); /* Formal gray gradient track */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Set cursor to pointer on hover */
+    animation: range-fill 1s ease-in-out forwards; /* Animate slider fill */
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default thumb styles */
+    appearance: none; /* Remove default thumb styles */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #999; /* Set thumb color to a darker gray */
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    animation: thumb-move 0.5s ease-in-out forwards; /* Animate thumb movement */
+  }
+  
+  @keyframes range-fill {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 100% 0;
+    }
+  }
+  
+  @keyframes thumb-move {
+    from {
+      transform: translateX(-50%); /* Start thumb at the beginning */
+    }
+    to {
+      transform: translateX(calc(100% - 50%)); /* Move thumb to the end based on slider value */
+    }
+  }
+  
+  label {
+    margin-bottom: 5px;
+    display: block;
+    color: #333; /* Text color matches the app container */
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-top: 20px;
+    color: #333; /* Text color matches the app container */
+    animation: bmi-pulse 1s ease-in-out infinite alternate; /* Subtle pulse animation */
+  }
+  
+  @keyframes bmi-pulse {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.95; /* Reduce opacity slightly for a subtle pulse effect */
+    }
+  }
+  
